@@ -1,0 +1,11 @@
+1. fetch need to have headers as
+   headers: {
+    bearer: youKEY,
+    Accept: "*/*",
+    "Sec-Fetch-Mode": "cors",//this one is important to insure cors
+  }
+  also cors package to be added into the nodejs backend
+2. to make a component from a list , you have to use a .map() on list and return the individual component
+   because forEach doesn't return a value, that will be used to create a component.
+3. when we use absolute in child the considered parent will be first ancestor that have position as relative
+   or absolute.
