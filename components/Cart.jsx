@@ -5,10 +5,11 @@ const Cart = ({ name, description, price }) => {
         height: "200px",
         width: "300px",
         display: "block",
-        border: "solid 2px gray",
+        border: "solid 2px white",
         borderRadius: "15px",
         position: "relative",
-        backgroundColor: "white",
+        backgroundColor: "#FFF0A1",
+        color: "black",
       }}
     >
       <h2>{name}</h2>
@@ -28,5 +29,5 @@ const Cart = ({ name, description, price }) => {
     </div>
   );
 };
-
+// {color:white}
 export default Cart;
