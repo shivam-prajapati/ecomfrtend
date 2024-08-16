@@ -1,0 +1,17 @@
+.cart {
+  height: 200px;
+  width: 300px;
+  display: block;
+  border: solid 2px white;
+  border-radius: 15px;
+  position: relative;
+  background-color: #fff0a1;
+  color: black;
+  padding-left: 20px;
+}
+.price {
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  right: 8px;
+}
