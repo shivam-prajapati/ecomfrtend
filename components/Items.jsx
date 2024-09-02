@@ -1,13 +1,19 @@
 import Cart from "./Cart";
-import styles from "./Carts.module.css";
+import styles from "./Items.module.css";
 // let call = 0;
-const Carts = ({ listCart }) => {
-  console.log("inside Carts", typeof listCart);
+const Items = ({ listCart }) => {
+  // if (call !== 0) {
+  //   // console.log(call);
+  //   // return <h1>fuck you</h1>;
+  // }
+  // ++call;
+  // console.log(call);
+  console.log("inside Items", typeof listCart);
   let topMessage;
   if (listCart.length === 0) {
-    topMessage = `No Products in Cart`;
+    topMessage = `No Products`;
   } else {
-    topMessage = `Cart Elements`;
+    topMessage = `All Items`;
   }
   return (
     <div className={styles.carts}>
@@ -20,7 +26,7 @@ const Carts = ({ listCart }) => {
     </div>
   );
 };
-export default Carts;
+export default Items;
 
 // const Carts = ({ listCart }) => {
 //   let topMessage;

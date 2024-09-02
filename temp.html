@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .header {
+        background-color: lightyellow;
+        height: 170px;
+      }
+      .content {
+        background-color: lightpink;
+        flex-grow: 1;
+        overflow:auto;
+      }
+      .footer {
+        background-color: lightgreen;
+        height: 170px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">this is header</div>
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+      </div>
+      <div class="footer">This is footer</div>
+    </div>
+  </body>
+</html>

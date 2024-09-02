@@ -1,0 +1,29 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up full viewport height */
+}
+
+header,
+footer {
+  height: 60px; /* Fixed height for the header and footer */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  line-height: 60px; /* Center the text vertically */
+  flex-shrink: 0;
+  /* width:99%; */
+}
+
+main {
+  flex: 1; /* Main takes up remaining space */
+  padding: 20px; /* Add padding if needed */
+  background-color: #f4f4f4;
+  /* width:99%; */
+}

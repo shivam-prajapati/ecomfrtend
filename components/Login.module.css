@@ -1,0 +1,16 @@
+.outer {
+  display: block;
+  width: 600px;
+  height: 400px;
+  background-color: aqua;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.frm {
+  display: block;
+  background-color: blueviolet;
+  width: 450px;
+  height: 300px;
+  margin: auto;
+}

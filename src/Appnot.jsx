@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Cart from "../components/Cart";
-import bearer from "../variables";
+// import bearer from "../variables";
 import cartItem from "../data";
 import "./App.css";
 import Carts from "../components/Carts";
@@ -11,11 +11,15 @@ function App() {
   // const list = cartItem;
   const [isLoaded, setIsLoaded] = useState(false);
   // const isLoaded = true;
+  const token = localStorage.getItem('token');
+  if(!token){
+    console.log("fuck not ");
+  }
   useEffect(() => {
     fetch("http://localhost:5001/cart/", {
       method: "GET",
       headers: {
-        bearer: bearer,
+        bearer: token,
         Accept: "*/*",
         "Sec-Fetch-Mode": "cors",
       },

@@ -1,6 +1,6 @@
 import styles from "./Home.module.css";
-import Carts from "./Carts";
-import cartItem from "../data";
+import Items from "./Items";
+import allItems from "../allItems";
 // const Home = ({ listCart }) => {
 //   return (
 //     <div>
@@ -10,13 +10,17 @@ import cartItem from "../data";
 //   );
 // };
 const Home = () => {
-  const listCart = cartItem;
+  const listCart = allItems;
   return (
     <div>
       <header>
-        <button className={styles.log}>LOGIN/SIGNUP</button>
+        <button className={styles.log}>
+          <a href="enter">LOGIN/SIGNUP</a>
+        </button>
       </header>
-      <div className={styles.content}><Carts listCart={listCart}/></div>
+      <div className={styles.content}>
+        <Items listCart={listCart} />
+      </div>
       <footer>This is footer</footer>
     </div>
   );

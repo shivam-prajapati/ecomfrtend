@@ -8,11 +8,25 @@
   background-color: #fff0a1;
   color: black;
   padding-left: 20px;
-  margin: 15px;
 }
+
 .price {
   display: inline-block;
   position: absolute;
   bottom: 2px;
   right: 8px;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.msg {
+  font-size: 34px;
+  line-height: 40px;
+  margin: 3px;
+}
+.carts {
+  background-color: rgb(230, 213, 193);
 }

@@ -3,6 +3,9 @@ body {
   padding: 0px;
   background-color: bisque;
 }
+a {
+  text-decoration: none;
+}
 header {
   display: "block";
   position: relative;
@@ -34,9 +37,8 @@ footer {
   bottom: -18px;
 }
 .content {
-  margin-top: 0px;
-  margin-left: 35px;
-  max-width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
 }
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
